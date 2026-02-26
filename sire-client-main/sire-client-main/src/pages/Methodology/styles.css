@@ -1,0 +1,15 @@
+.methodology {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.methodology-container {
+    width: 90vw;
+    max-width: 1000px;
+    margin: 2rem auto;
+}
+
+.methodology-description {
+    margin: 1rem 0;
+}

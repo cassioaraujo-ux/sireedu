@@ -1,0 +1,32 @@
+.about-section-container {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-section-text-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    justify-content: center;
+}
+
+.about-video {
+    margin-top: 2rem;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.about-video iframe {
+    width: 640px;
+    height: 390px;
+}
+
+@media (max-width: 800px) {
+    .about-video iframe {
+        width: 320px;
+        height: 180px;
+    }
+}

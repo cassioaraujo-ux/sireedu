@@ -1,0 +1,44 @@
+.recommendation-card-score-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.recommendation-card-relevance {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-green);
+    color: #fff;
+    font-size: 1rem;
+    /* background-color: aliceblue; */
+    font-weight: 600;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.recommendation-card-score {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4c4c4c;
+    font-size: .9rem;
+    background-color: var(--red-color);
+    color: #fff;
+    font-weight: 600;
+    width: 45px;
+    height: 45px;
+    margin-left: .1rem;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.recommendation-card-container:hover {
+    transform: scale(1.01);
+}

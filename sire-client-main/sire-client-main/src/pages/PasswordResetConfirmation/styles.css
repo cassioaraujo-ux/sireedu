@@ -1,0 +1,26 @@
+.password-reset-confirmation-container {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.password-reset-confirmation-content {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    padding: 3rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 650px), (max-height: 400px) {
+    .password-reset-confirmation-container {
+        align-items: start;
+    }
+    .password-reset-confirmation-content {
+        border: none;
+        box-shadow: none;
+    }
+}

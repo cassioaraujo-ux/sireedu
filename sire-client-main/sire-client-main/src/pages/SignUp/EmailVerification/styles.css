@@ -1,0 +1,30 @@
+.email-verification-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    padding: 3rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.email-verification-image-section {
+    flex: 1;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	max-width: 600px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.email-verification-image-section img {
+	width: 100%;
+}
+
+@media (max-width: 650px) {
+    .email-verification-content {
+        box-shadow: none;
+        border: none;
+    }
+}

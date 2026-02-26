@@ -1,0 +1,15 @@
+.product-rating {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 70px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: .1rem .5rem;
+}
+
+.product-rating:hover {
+    /* transform: scale(1.03); */
+    background-color: #eeeeee;
+}

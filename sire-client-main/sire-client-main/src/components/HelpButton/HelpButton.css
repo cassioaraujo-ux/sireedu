@@ -1,0 +1,236 @@
+/* HelpButton.css */
+.help-button-container {
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+}
+
+
+.help-mascot {
+    width: 150px;
+    height: 150px;
+   
+    /* Centered */
+    position: absolute;
+    top: 40%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+
+
+    z-index: 12;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.2));
+}
+
+
+
+
+/* --- Expansion rings animation --- */
+.help-expansion-rings {
+    position: absolute;
+    top: 50%;
+    /* Centered */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 11;
+}
+.help-ring {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 2px solid rgba(52, 152, 219, 0.7);
+    opacity: 0;
+}
+.help-ring-1 {
+    width: 40px;
+    height: 40px;
+    animation: expandRing 2s infinite 0s;
+}
+.help-ring-2 {
+    width: 40px;
+    height: 40px;
+    animation: expandRing 2s infinite 0.6s;
+}
+.help-ring-3 {
+    width: 40px;
+    height: 40px;
+    animation: expandRing 2s infinite 1.2s;
+}
+@keyframes expandRing {
+    0% {
+        width: 40px;
+        height: 40px;
+        border-width: 2px;
+        opacity: 0.7;
+    }
+    100% {
+        width: 80px;
+        height: 80px;
+        border-width: 1px;
+        opacity: 0;
+    }
+}
+
+
+/* --- Circular arrows animation --- */
+.help-circular-arrows {
+    position: absolute;
+    top: 50%;
+    /* Centered */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+.help-circular-arrow {
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    animation: rotateArrow 3s linear infinite;
+}
+@keyframes rotateArrow {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* --- Pointer animation --- */
+.help-pointer-animation {
+    position: absolute;
+    top: -90px;
+    /* Centered */
+    left: 67%;
+    transform: translate(-50%, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: helpPointerFloat 2s ease-in-out infinite;
+    z-index: 15;
+}
+
+
+.help-pointer-text {
+    background-color: var(--primary-color, #3498db);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    white-space: nowrap;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    animation: helpTextFlash 1.5s ease-in-out infinite alternate;
+}
+@keyframes helpTextFlash {
+    0% {
+        background-color: var(--primary-color, #3498db);
+    }
+    100% {
+        background-color: var(--accent-color, #2980b9);
+    }
+}
+
+
+.help-pointer-arrow {
+    position: relative;
+    width: 20px;
+    height: 30px;
+    animation: helpArrowPulse 1.5s ease-in-out infinite alternate;
+    margin-top: 5px;
+}
+.help-pointer-arrow:before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 25px;
+    background-color: var(--primary-color, #3498db);
+}
+.help-pointer-arrow:after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 16px;
+    height: 16px;
+    box-sizing: border-box;
+    border-right: 2px solid var(--primary-color, #3498db);
+    border-bottom: 2px solid var(--primary-color, #3498db);
+    transform: translate(-50%, 0) rotate(45deg);
+    transform-origin: center;
+}
+
+
+@keyframes helpPointerFloat {
+    0%, 100% {
+        transform: translate(-50%, 0);
+    }
+    50% {
+        transform: translate(-50%, -5px);
+    }
+}
+@keyframes helpArrowPulse {
+    0% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* --- Wrapper (from parent) --- */
+.help-button-wrapper {
+    position: fixed;
+    bottom: 180px;
+    left: 30px;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+
+
+}
+.help-button-wrapper:hover .help-button-label {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+/* --- For smaller screens --- */
+@media (max-width: 768px) {
+    .help-button-wrapper {
+    position: fixed;
+    /* 💡 MOVED UP: Added !important to force this rule to win */
+    bottom: 180px !important;
+    left: 30px;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+}
+   
+    .help-button-container {
+        width: 80px;
+        height: 80px;
+    }
+    .help-mascot {
+        width: 80px;
+        height: 80px;
+    }
+    .help-expansion-rings {
+        transform: translate(-50%, -50%) scale(0.6);
+    }
+    .help-pointer-text {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+    .help-pointer-animation {
+        top: -60px;
+    }
+}
+

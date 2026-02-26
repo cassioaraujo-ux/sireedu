@@ -1,0 +1,32 @@
+.back-button {
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    border-color: #308f92;
+    color: #308f92;
+    transition: all 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #308f92;
+    color: white;
+    border-color: #308f92;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transform: translateX(-2px);
+}
+
+.back-button .MuiButton-startIcon {
+    margin-right: 8px;
+}
+
+.back-button-wrapper {
+    z-index: 100;
+    margin-bottom: 1rem;
+}
+
+.back-button-container {
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto;
+    width: 90vw;
+    max-width: 1000px;
+}

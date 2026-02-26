@@ -1,0 +1,94 @@
+.password-reset-container {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.password-reset-content {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    padding: 3rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.password-reset-title {
+    font-size: clamp(2rem, 2.5vw, 3rem);
+    color: var(--primary-green);
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.password-reset-text {
+    font-size: 1.5rem;
+    color: #6a6a6a;
+    margin-bottom: 1.5rem;
+    max-width: 350px;
+}
+
+.instruction-message {
+    font-size: 1.1rem;
+    color: #6a6a6a;
+    max-width: 500px;
+}
+
+.password-reset-button {
+    padding: 0.5rem 1.7rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 20px;
+    transition: 0.2;
+    margin-bottom: 1.3rem;
+    width: 100%;
+}
+  
+.password-reset-button:hover {
+    background-color: var(--primary-green-hover);
+}
+
+.email {
+    color: var(--primary-green);
+    font-weight: 600;
+}
+
+.reset-image-section {
+    flex: 1;
+	display: flex;
+	justify-content: center;
+	max-width: 400px;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.reset-image-section img {
+	width: 100%;
+}
+
+.login-link {
+    color: var(--primary-green);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.login-link:hover {
+    color: var(--primary-green-hover);
+}
+
+@media (max-width: 650px), (max-height: 400px) {
+    .password-reset-container {
+        align-items: start;
+    }
+    .password-reset-content {
+        border: none;
+        box-shadow: none;
+    }
+}

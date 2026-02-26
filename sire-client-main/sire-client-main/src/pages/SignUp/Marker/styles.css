@@ -1,0 +1,23 @@
+.marker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+}
+
+.border {
+    border: 2px solid #ccc;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.color-green{
+    color: var(--primary-green);
+}

@@ -1,0 +1,41 @@
+.revisor-dashboard {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.revisor-container {
+    width: 90vw;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+.revisor-header {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.revisor-table {
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1) !important;
+}
+
+.truncate-text {
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.link-text {
+    color: #1976d2;
+    text-decoration: none;
+}
+
+.link-text:hover {
+    text-decoration: underline;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+}

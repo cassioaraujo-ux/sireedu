@@ -1,0 +1,112 @@
+.login-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    padding: 3rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.login-heading {
+    font-size: clamp(1.5rem, 2vw, 2.5rem);
+    text-align: center;
+    font-weight: 600;
+    color: var(--primary-green);
+    margin-bottom: 2rem;
+    padding: 0;   
+}
+
+.forgot-password {
+    margin-bottom: 2rem;
+}
+
+.forgot-password-link {
+    color: var(--primary-green);
+    text-decoration: none;
+}
+
+.forgot-password-link:hover {
+    color: var(--primary-green-hover);
+}
+
+.login-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    padding: 0.5rem 1.7rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 20px;
+    transition: 0.2;
+    margin-bottom: 1rem;
+}
+
+.login-button:hover {
+    background-color: var(--primary-green-hover);
+}
+
+.create-account-text {
+    text-align: center;
+    color: #808080;
+    padding: 0;
+    font-size: 0.95rem;
+
+}
+
+.create-account-link {
+    text-decoration: none;
+    margin-left: 0.3rem;
+}
+
+.create-account-link:hover {
+    color: var(--primary-green-hover);
+}
+
+.error-message {
+    color: rgb(255, 31, 31);
+    font-size: 0.85rem;
+}
+
+/* @media(max-height: 400px) {
+    .form-container {
+        width: 400px;
+    }
+} */
+
+@media(max-width: 600px) {
+    .form-container {
+        width: 400px;
+    }
+}
+
+@media(max-width: 500px), (max-height: 400px) {
+    .login-container {
+        justify-content: start;
+    }
+    .form-container {
+        max-width: 385px;
+        padding: 2rem;
+        border: none;
+        box-shadow: none;
+    }
+}

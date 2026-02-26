@@ -1,0 +1,120 @@
+:root {
+  /* --primary-green: #10A37F;
+  --primary-green-hover: #12b88e; */
+  --primary-green: #40A3A6;
+  --primary-green-hover: #308f92;
+  /* --primary-green: #00FF66; */
+  --blue-color: #002254;
+  --red-color: #FF4747;
+  --orange-color: #F9B13D;
+  --light-blue-color: #2374D0;
+  --purple-color: #990099;
+  --pink-color: #DD4477;
+  --ocean-blue: #0099C6;
+  --leaf-green: #66AA00;
+}
+
+/* Color */
+.primary-color {
+  color: var(--primary-green);
+}
+
+.red-color {
+  color: var(--red-color);
+}
+
+.orange-color {
+  color: var(--orange-color);
+}
+
+.ligth-blue-color {
+  color: var(--light-blue-color);
+}
+
+.purple-color {
+  color: var(--purple-color);
+}
+
+.pink-color {
+  color: var(--pink-color);
+}
+
+.blue-color {
+  color: var(--blue-color);
+}
+
+.ocean-blue-color {
+  color: var(--ocean-blue);
+}
+
+.leaf-green-color {
+  color: var(--leaf-green);
+}
+
+/* Background */
+.bg-primary-color {
+  background-color: var(--primary-green);
+}
+
+.bg-blue {
+  background-color: var(--blue-color);
+}
+
+.bg-red {
+  background-color: var(--red-color);
+}
+
+.bg-orange {
+  background-color: var(--orange-color);
+}
+
+.bg-ligth-blue {
+  background-color: var(--light-blue-color);
+}
+
+.bg-purple {
+  background-color: var(--purple-color);
+}
+
+.bg-pink {
+  background-color: var(--pink-color);
+}
+
+.bg-ocean-blue {
+  background-color: var(--ocean-blue);
+}
+
+.bg-leaf-green {
+  background-color: var(--leaf-green);
+}
+
+h1,
+h2,
+h3 {
+  color: #4c4c4c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Reem Kufi", sans-serif !important;
+  /* font-family: sans-serif !important; */
+}
+
+body {
+  background-color: #fff;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-width: 100vh;
+}
+
+main {
+  flex: 1;
+  flex-grow: 1;
+}

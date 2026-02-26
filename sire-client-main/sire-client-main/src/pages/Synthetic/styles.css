@@ -1,0 +1,48 @@
+.synthetic {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.synthetic-container {
+    width: 90vw;
+    max-width: 1000px;
+    margin: 2rem auto;
+}
+
+.data-table-section {
+    margin: 1.5rem 0;
+}
+
+.chart-section {
+    display: flex;
+    /* 💡 ADDED: Stacks the title and chart vertically */
+    flex-direction: column;    
+    
+    /* 💡 ADDED: Centers the title and chart horizontally */
+    align-items: center;       
+    
+    /* This centers the block vertically if there's extra space */
+    justify-content: center;   
+}
+
+/* 💡 ADDED: Style for the new <h1> title */
+.chart-title {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1rem; /* Adjust space between title and chart */
+    
+    /* Optional: Style the H1 to look better */
+    font-size: 1.5rem; /* Example: 24px */
+    font-weight: 600;
+    color: #333;
+}
+
+.dialog-image-container {
+    display: flex;
+    flex: 1;
+}
+
+.dialog-image-container img {
+    width: 100%;
+}

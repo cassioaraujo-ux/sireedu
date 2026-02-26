@@ -1,0 +1,74 @@
+.professor {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.professor-container {
+    width: 90vw;
+    max-width: 1000px;
+    margin: 2rem auto;
+}
+
+.professor-header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+
+    p {
+        margin-bottom: 0.3rem;
+        text-align: center;
+    }
+
+    h2 {
+        color: var(--red-color);
+    }
+}
+
+.professor-title-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.professor-datatable-section {
+    margin: 1rem 0;
+}
+
+.professor-text-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #f5f5f5;
+    margin-bottom: 1rem;
+    border-radius: 3px;
+    padding: .4rem 1rem;
+    cursor: default;
+}
+
+.border-red-color {
+    border-left: 8px solid var(--red-color);
+}
+
+.border-orange-color {
+    border-left: 8px solid var(--orange-color);
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateX(50px);
+    animation: fadeIn 1.5s ease forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

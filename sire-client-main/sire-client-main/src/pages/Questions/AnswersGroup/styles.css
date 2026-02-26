@@ -1,0 +1,114 @@
+.answers-group-container {
+    margin: 0 auto 80px auto;
+}
+
+.answer {
+    display: inline-block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #A5A5A5;
+    padding: 5px;
+    margin-right: 140px;
+    cursor: pointer;
+    transition: background-color 0.4 ease;
+    -webkit-touch-callout: none; /* Para iOS */
+    user-select: none;           /* Padrão para todos os navegadores */
+}
+
+.answer:last-of-type {
+    margin-right: 0;
+}
+
+.answer-with-after::after {
+    display: block;
+    position: absolute;
+    top: 43%;
+    left: 100%;
+    width: 150PX;
+    height: 7px;
+    content: "";
+    background-color: #A5A5A5;
+    pointer-events: none;
+}
+
+.circle-text {
+    position: absolute;
+    margin-top: 0.5rem;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #000;
+    top: 105%;
+    left: -100%;
+    width: 150px;
+    text-align: center;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    background-color: #CDCDCD;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-style: normal;
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    transition: background-color 0.4s ease;
+}
+
+.answer:hover {
+    animation: pulse-animation 2s infinite;
+    background-color: var(--primary-green);
+}
+
+.answer:hover .circle {
+    background-color: var(--primary-green);
+}
+
+.pulse {
+    animation: pulse-animation 2s infinite;
+}
+
+@keyframes pulse-animation {
+0% {
+        box-shadow: 0 0 0 0px rgba(77, 177, 60, 0.2);
+    }
+100% {
+        box-shadow: 0 0 0 20px rgba(77, 177, 60, 0);
+    }
+}
+
+@media(max-width: 800px) {
+    .answer {
+        margin-right: 70px;
+    }
+    .answer-with-after::after {
+        width: 80px;
+    }
+    .circle-text {
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 530px) {
+    .answer {
+        margin-right: 40px;
+    }
+    .answer-with-after::after {
+        width: 50px;
+    }
+    .circle-text {
+        font-size: 9px;
+        width: 100px;
+        left: -50%;
+    }
+}

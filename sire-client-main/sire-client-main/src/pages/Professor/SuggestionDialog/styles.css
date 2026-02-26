@@ -1,0 +1,19 @@
+.suggestion-dialog-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 10px !important;
+}
+
+.suggestion-subtitle {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.checkbox-group-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}

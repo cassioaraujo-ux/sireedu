@@ -1,0 +1,20 @@
+.welcome {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.welcome-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+@media (max-width: 650px) {
+    .welcome-container {
+        justify-content: start;
+    }
+}

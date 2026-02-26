@@ -1,0 +1,119 @@
+.recommendation {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.recommendation-container {
+    width: 90vw;
+    max-width: 1000px;
+    margin: 2rem auto;
+}
+
+.recommendation-header {
+    text-align: center;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recommendation-header h1 {
+    color: #4c4c4c;
+}
+
+.reset-tutorial-button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.reset-tutorial-button:hover {
+    background-color: #5a6268;
+}
+
+.recommendation-text-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #f5f5f5;
+    margin-bottom: 1rem;
+    border-radius: 3px;
+    padding: .4rem 1rem;
+    cursor: default;
+}
+
+.border-green-color {
+    border-left: 8px solid var(--primary-green);
+}
+
+.border-red-color {
+    border-left: 8px solid var(--red-color);
+}
+
+.border-orange-color {
+    border-left: 8px solid var(--orange-color);
+}
+
+.border-blue-color {
+    border-left: 8px solid var(--light-blue-color);
+}
+
+.recommendation-card-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.selected-recommendation {
+    margin-bottom: 1.5rem;
+}
+
+.recommendation-subtitle {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.recommendation-subtitle h2 {
+    position: relative;
+    display: inline;
+    color: var(--red-color);
+}
+
+.recommendation-video {
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.recommendation-video iframe {
+    width: 640px;
+    height: 390px;
+}
+
+.help-button-wrapper {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 999;
+}
+
+@media (max-width: 800px) {
+    .recommendation-video iframe {
+        width: 320px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 1120px) {
+    .recommendation-card-content {
+        justify-content: center;
+    }
+}

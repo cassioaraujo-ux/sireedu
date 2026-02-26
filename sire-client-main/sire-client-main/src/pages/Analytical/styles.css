@@ -1,0 +1,15 @@
+.analytical {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.analytical-container {
+    width: 90vw;
+    max-width: 1000px;
+    margin: 2rem auto;
+}
+
+.data-table-content {
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,12 @@
+.avatar-container {
+    /* background-color: gainsboro; */
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-weight: 600;
+}

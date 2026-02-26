@@ -1,0 +1,63 @@
+.result {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.result-container {
+    width: 90vw;
+    max-width: 1000px;
+    margin: 2rem auto;
+}
+
+.result-content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.result-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    
+    h2 {
+        color: var(--red-color);
+        text-align: center;
+    }
+}
+
+.about-section-text-container {
+    padding: 10px;
+}
+
+/* Adicione isso ao seu arquivo styles.css */
+.tutorial-controls {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+  
+/* Se você preferir que o botão de reiniciar tutorial fique à direita do cabeçalho */
+.result-header {
+    display: flex;
+    flex-direction: column;
+}
+  
+.result-header h2 {
+    margin-bottom: 16px;
+}
+  
+/* Opcional: SE você quiser que o botão fique alinhado à direita */
+@media (min-width: 768px) {
+.result-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.tutorial-controls {
+    margin-top: 0;
+}
+}

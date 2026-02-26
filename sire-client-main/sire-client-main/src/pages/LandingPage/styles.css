@@ -1,0 +1,111 @@
+.landing-page {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+    width: 85vw;
+    max-width: 1000px;
+    margin: 0rem auto;
+}
+
+.primary-button {
+    padding: 0.9rem 1.7rem;
+    background-color: var(--primary-green);
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    font-size: 1.1rem;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2;
+}
+
+.primary-button:hover {
+    background-color: var(--primary-green-hover);
+}
+
+.primary-heading {
+    font-size: clamp(1.5rem, 2.3vw, 2.1rem);
+    color: #4c4c4c;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;   
+}
+
+.primary-text {
+    font-size: clamp(1.3rem, 1.2vw, 1.5rem);
+    max-width: 500px;
+    color: #6a6a6a;
+    margin: 1.5rem 0rem;
+}
+
+.secondary-text {
+    font-size: 1.2rem;
+    color: #6a6a6a;
+    margin: 0.8rem 0rem;
+}
+
+.third-text {
+    font-size: 1rem;
+    color: #6a6a6a;
+    margin: 0.8rem 0rem;
+}
+
+.primary-subheading {
+    font-weight: 700;
+    color: var(--primary-green);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.secondary-button {
+    padding: 1rem 2rem;
+    background-color: var(--primary-green);
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 600;
+    color: white;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .secondary-button svg {
+    margin-left: 0.75rem;
+    font-size: 1.5rem;
+  }
+  .secondary-button:hover {
+    background-color: var(--primary-green-hover);
+  }
+
+@media (max-width: 800px) {
+    .primary-heading {
+        max-width: 90%;
+        text-align: center;
+    }
+    .primary-text {
+        text-align: center;
+        max-width: 80%;
+    }
+    .secondary-button {
+        font-size: 1rem;
+        padding: 0.8rem 2rem;
+        cursor: pointer;
+    }
+    .primary-subheading {
+        text-align: center;
+    }
+}
+
+@media (max-width: 1000px) {
+    .primary-button {
+        font-size: 1rem;
+    }
+}
